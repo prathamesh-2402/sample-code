@@ -4,6 +4,10 @@
     font-size: 1.1rem;
 }
 
+body{
+    height: 100vh;
+}
+
 .nav {
     overflow: hidden;
     background-color: #c6c6c6;
@@ -40,12 +44,6 @@
     align-items: center;
 }
 
-@media only screen and (max-width: 768px) {
-    .icon {
-        display: flex;
-        padding: 0 0 0 6rem;
-    }
-}
 .show{
     display: flex;
     
@@ -53,4 +51,48 @@
 
 .unshow{
     display: none;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 90%;
+}
+
+.generateGradient {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    background-color: rgba(220,220,235,0.5);
+    font-weight: 700;
+    font-size: 2.5rem;
+    color: #454845;
+    border-radius: 5px;
+    padding: 0.5rem;
+    transition: all ease-in-out 0.5s;
+}
+
+.output {
+    margin: 1rem;
+}
+
+.generateGradient:hover {
+    background-color: rgba(220,220,235,0.7);
+    transition: all ease 0.3s;
+  }
+
+.generateGradient:active {
+    transform: translateY(1px);
+}
+
+
+@media only screen and (max-width: 768px) {
+    .icon {
+        display: flex;
+        padding: 0 0 0 6rem;
+    }
 }
