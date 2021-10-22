@@ -12,6 +12,7 @@ body{
     overflow: hidden;
     background-color: #c6c6c6;
     display: flex;
+    justify-content: space-between;
 }
 
 .active {
@@ -42,17 +43,11 @@ body{
     /* padding: 0 0 0 6rem; */
     /* justify-content: center; */
     align-items: center;
+   
 }
-
-.show{
+.nav-link{
     display: flex;
-    
 }
-
-.unshow{
-    display: none;
-}
-
 section {
     display: flex;
     flex-direction: column;
@@ -93,6 +88,15 @@ section {
 @media only screen and (max-width: 768px) {
     .icon {
         display: flex;
-        padding: 0 0 0 6rem;
+        margin: 0 1rem;
+        
+
+    }
+    .nav-link{
+        display: none;
+    }
+
+    .show{
+        display: flex;
     }
 }
